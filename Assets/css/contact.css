@@ -1,0 +1,181 @@
+/* Start :root */
+:root {
+  --main-color: #ff5722;
+  --secondery-color: #ffc93c;
+  --beg-gray: #f4f6f9;
+  --section-color-white: white;
+  --text-color-black: black;
+  --text-color-white: white;
+  --nav-color: black;
+  --section-color: #f4f6f9;
+  --paragrach-color: #777;
+  --main-transtion: all 0.7s;
+}
+
+.dark {
+  --beg-gray: #111111;
+  --section-color-white: #232220;
+  --text-color-black: white;
+  --text-color-white: black;
+  --nav-color: white;
+}
+
+/* End :root */
+/* Start CONTACT OUR TEAM  */
+
+.contacts-contant {
+  padding-bottom: 3rem;
+}
+
+.contact-links {
+  display: flex;
+  max-width: 100%;
+}
+
+.contact-links .link {
+  position: relative;
+  width: calc(100% / 3);
+  padding: 2rem;
+  margin: 15px;
+  background-color: var(--section-color-white);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.contact-links .link h6 {
+  color: var(--text-color-black);
+  margin-bottom: 10px;
+}
+
+.contact-links .link a {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--paragrach-color);
+  transition: var(--main-transtion);
+}
+
+.contact-links .link a:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.contact-links .link i {
+  position: absolute;
+  right: -10px;
+  top: 100px;
+  font-size: 60px;
+  color: var(--paragrach-color);
+  transform: rotateZ(-40deg);
+}
+
+.form {
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-top: 3rem;
+}
+
+.form .inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+  row-gap: 20px;
+}
+.form .inputs input {
+  width: calc(100% / 2 - 10px);
+  padding: 15px;
+  background-color: var(--section-color-white);
+  color: var(--text-color-black);
+  outline: none;
+  border: 1px solid var(--section-color-white);
+  border-radius: 5px;
+  transition: var(--main-transtion);
+}
+
+.form > textarea {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: var(--section-color-white);
+  color: var(--text-color-black);
+  outline: none;
+  border: 1px solid var(--section-color-white);
+  transition: var(--main-transtion);
+  border-radius: 5px;
+  resize: none;
+  height: 100px;
+}
+
+.form .inputs input:focus,
+.form > textarea:focus,
+.form .inputs input:valid,
+.form > textarea:valid {
+  border-color: var(--main-color);
+}
+
+.submetButton {
+  text-align: right !important;
+  margin-top: 20px;
+}
+.form .submetButton input {
+  border: 0;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: var(--main-transtion);
+  width: fit-content;
+  line-height: 30px;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+  border: 1px solid var(--main-color);
+}
+
+.form .submetButton input:hover {
+  color: var(--main-color);
+  background: transparent;
+}
+
+@media (max-width: 500px) {
+  .form .submetButton input {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact-links {
+    flex-wrap: wrap;
+  }
+
+  .contact-links .link {
+    width: calc(100% / 2 - 60px);
+  }
+  .form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-links {
+    flex-wrap: wrap;
+  }
+
+  .contact-links .link {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 468px) {
+  .form .inputs input {
+    width: 100%;
+  }
+}
+
+/* End CONTACT OUR TEAM  */
